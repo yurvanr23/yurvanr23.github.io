@@ -3,4 +3,4 @@ author: "Yurvan Ramjan"
 description: "Showcasing my projects in Machine Learning, Medical Image Analysis, and Quantum Computing."
 baseurl: ""  # Leave empty for GitHub Pages
 url: "https://yurvanr23.github.io"  # Replace with your GitHub Pages URL
-theme: tactile  # You can choose another theme later if you like
+theme: minimal  # You can choose another theme later if you like
