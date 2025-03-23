@@ -3,16 +3,31 @@ layout: home
 title: Welcome to My Portfolio
 ---
 
-## My Projects
+## About Me
 
-### EfficientSAM for Medical Image Analysis
-A lightweight version of the SAM model for medical imaging.
-[View on GitHub](https://github.com/yurvanr23/EfficientSAM_for_MedicalImageAnalysis)
+Hi, I'm **Yurvan Ramjan**, a passionate researcher and engineer specializing in **Machine Learning**, **Medical Image Analysis**, and **Quantum Computing**.
 
-### NBA Game Outcome Prediction
-Using regression models to predict NBA game results.
-[Project Link](#)
+### My Skills
+- Machine Learning
+- Computer Vision
+- Medical Image Segmentation
+- Quantum Computing (VQE)
+  
+### Connect with Me
+- [LinkedIn](https://www.linkedin.com/in/yurvan-ramjan)
+- [GitHub](https://github.com/yurvanr23)
+- [Email](mailto:yurvanr23@gmail.com)
 
-### Variational Quantum Eigensolver (VQE)
-Exploring quantum computing techniques for chemistry.
-[Project Link](#)
+## Projects
+
+### 1. EfficientSAM for Medical Image Analysis
+EfficientSAM is a lightweight version of the Segment Anything Model (SAM) optimized for medical images. This project aims to improve segmentation accuracy while reducing computational complexity.
+[View Project on GitHub](https://github.com/yurvanr23/EfficientSAM_for_MedicalImageAnalysis)
+
+### 2. NBA Game Outcome Prediction
+Using regression models to predict NBA game outcomes, based on historical statistics and team performance.
+[View Project on GitHub](#)
+
+### 3. Variational Quantum Eigensolver (VQE)
+An exploration of quantum computing techniques for quantum chemistry, leveraging the VQE algorithm for molecular energy calculations.
+[View Project on GitHub](#)
