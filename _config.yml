@@ -4,3 +4,4 @@ description: "Showcasing my projects in Machine Learning, Medical Image Analysis
 baseurl: ""  # Leave empty for GitHub Pages
 url: "https://yurvanr23.github.io"  # Replace with your GitHub Pages URL
 theme: jekyll-theme-cayman  # You can choose another theme later if you like
+style: "assets/css/style.css"
