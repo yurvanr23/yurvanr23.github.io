@@ -1,80 +1,76 @@
 /* General Page Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light background */
-    color: #333; /* Dark text */
+    background-color: #f0f0f0;  /* Set a light background color */
+    color: #333; /* Dark text for readability */
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif; /* Font for headers */
-    color: #007bff; /* Primary blue color for headings */
+    font-family: 'Roboto', sans-serif;  /* Set a modern font for headings */
+    color: #007bff; /* Use a primary blue color for headings */
 }
 
+/* Links */
 a {
-    color: #007bff; /* Primary blue color for links */
-    text-decoration: none; /* Remove underline from links */
+    color: #007bff;  /* Primary blue color for links */
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;  /* Add underline on hover for links */
 }
 
-/* Customize Sidebar (if using) */
-.sidebar {
-    background-color: #343a40; /* Dark sidebar background */
-    color: #fff; /* White text in sidebar */
-}
-
-.sidebar a {
-    color: #fff; /* White links in the sidebar */
-}
-
-.sidebar a:hover {
-    color: #ffdd57; /* Hover color for links in the sidebar */
-}
-
-/* Header Section */
-header {
-    background-color: #007bff; /* Blue background */
-    color: #fff; /* White text */
-    padding: 20px;
+/* Header Styling */
+.header {
+    background-color: #007bff;  /* Blue background for the header */
+    color: white;  /* White text in header */
+    padding: 30px;
     text-align: center;
 }
 
-/* Customizing the Footer */
+/* Footer Styling */
 footer {
-    background-color: #343a40; /* Dark footer */
-    color: #ccc; /* Light text for footer */
+    background-color: #343a40;  /* Dark footer background */
+    color: white;  /* White text in footer */
     padding: 20px;
     text-align: center;
 }
 
-/* About Me Section */
+/* Section Styles */
+section {
+    background-color: white;  /* White background for each section */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Customizing the About Me Section */
 #about {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;  /* White background */
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
 #about h2 {
-    color: #007bff; /* Blue color for the title */
+    color: #007bff;  /* Blue color for titles */
 }
 
-/* Projects Section */
+/* Customizing the Projects Section */
 #projects {
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f8f9fa;  /* Light gray background for projects */
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
 .project-card {
-    background-color: #fff; /* White background for project cards */
-    border: 1px solid #e1e1e1; /* Light gray border */
+    background-color: #fff;  /* White background for project cards */
+    border: 1px solid #e1e1e1;  /* Light border */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect */
     margin-bottom: 20px;
 }
 
@@ -94,12 +90,4 @@ footer {
 
 .project-card a:hover {
     color: #0056b3;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 30px;
 }
