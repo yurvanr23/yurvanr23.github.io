@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<div class="container">
+  <h1>Yurvan Ramjan</h1>
+  <p class="subtitle">
+    AI • Machine Learning • Data Science • Web Development
+  </p>
+
+  <p style="text-align:center; max-width:700px; margin:2rem auto;">
+    Computer Science Honours graduate focused on building efficient AI systems,
+    data-driven applications, and modern web experiences.
+  </p>
+
+  <h2>Featured Projects</h2>
+
+  <div class="grid">
+    <ProjectCard
+      title="EfficientSAM for Medical Imaging"
+      desc="Optimised Segment Anything Model for medical image analysis."
+      tech="Python • PyTorch • Deep Learning"
+      image="/screenshots/efficientsam.png"
+      link="https://github.com/yurvanr23/EfficientSAM_for_MedicalImageAnalysis"
+    />
+
+    <ProjectCard
+      title="NBA Performance Analysis"
+      desc="Machine learning on NBA & ABA statistics for predictions."
+      tech="Python • Data Science"
+      image="/screenshots/nba.png"
+      link="https://github.com/yurvanr23/COMP721-NBA-Performance-Analysis"
+    />
+
+    <ProjectCard
+      title="Pokémon Companion App"
+      desc="Interactive Pokédex and team builder using PokéAPI."
+      tech="HTML • CSS • JavaScript"
+      image="/screenshots/pokemon.png"
+      link="https://github.com/yurvanr23/Pokemon-Companion-App"
+    />
+
+    <ProjectCard
+      title="AI Girlfriend App"
+      desc="Flask-based conversational web application."
+      tech="Python • Flask"
+      image="/screenshots/ai-girlfriend.png"
+      link="https://github.com/yurvanr23/AI-Girlfriend-App"
+    />
+
+    <ProjectCard
+      title="Banknote Recognition"
+      desc="Computer vision system for SA banknote classification."
+      tech="Python • OpenCV"
+      image="/screenshots/banknote.png"
+      link="https://github.com/yurvanr23/South-African-Banknote-Recognition"
+    />
+
+    <ProjectCard
+      title="Variational Quantum Eigensolver"
+      desc="Quantum chemistry energy estimation using VQE."
+      tech="Python • Quantum Computing"
+      image="/screenshots/vqe.png"
+      link="https://github.com/yurvanr23/Variational-Quantum-Eigensolver"
+    />
+  </div>
+
+  <h2 style="margin-top:4rem;">Connect</h2>
+  <p style="text-align:center;">
+    <a href="https://github.com/yurvanr23">GitHub</a> •
+    <a href="#">LinkedIn</a> •
+    <a href="#">Email</a>
+  </p>
+</div>
