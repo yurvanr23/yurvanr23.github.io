@@ -1,0 +1,17 @@
+---
+const { title, desc, tech, image, link } = Astro.props;
+---
+
+<div class="card">
+  <img src={image} alt={title} />
+  <div class="card-content">
+    <h3>{title}</h3>
+    <p>{desc}</p>
+    <span class="tag">{tech}</span>
+    <p>
+      <a href={link} target="_blank" style="color: var(--accent);">
+        View on GitHub →
+      </a>
+    </p>
+  </div>
+</div>
