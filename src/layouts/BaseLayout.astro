@@ -1,5 +1,5 @@
 ---
-import { Analytics } from "@vercel/analytics/astro";
+import Analytics from "@vercel/analytics/astro";
 
 
 const {
@@ -38,11 +38,11 @@ url = "https://yurvanr23-portfolio.vercel.app",
 
 
 <link rel="icon" href="/favicon.svg" />
+<Analytics />
 </head>
 
 
 <body>
 <slot />
-<Analytics />
 </body>
 </html>
