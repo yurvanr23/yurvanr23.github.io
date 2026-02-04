@@ -1,30 +1,48 @@
 ---
-const { title = "Yurvan Ramjan" } = Astro.props;
+import { Analytics } from "@vercel/analytics/astro";
+
+
+const {
+title = "Yurvan Ramjan — AI & Software Portfolio",
+description = "AI, Machine Learning, and Software Engineering projects by Yurvan Ramjan.",
+image = "/preview.png",
+url = "https://yurvanr23-portfolio.vercel.app",
+} = Astro.props;
 ---
+
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{title}</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Yurvan Ramjan – AI, Machine Learning, Data Science & Web Development Portfolio" />
+<!-- Primary SEO -->
+<title>{title}</title>
+<meta name="description" content={description} />
 
-    <!-- Fonts (minimal, modern) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<!-- Open Graph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:url" content={url} />
+<meta property="og:type" content="website" />
 
-    <slot name="head" />
-  </head>
 
-  <body>
-    <slot />
-  </body>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+
+
+<link rel="icon" href="/favicon.svg" />
+</head>
+
+
+<body>
+<slot />
+<Analytics />
+</body>
 </html>
