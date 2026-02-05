@@ -26,25 +26,91 @@ const projects = [
 ---
 
 <BaseLayout>
-  <section class="hero container">
+  <!-- HERO -->
+  <section class="container" style="padding-top:120px">
     <h1>Yurvan Ramjan</h1>
     <p>AI • Machine Learning • Software Engineering</p>
+
+    <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn" href="/cv.pdf">Download CV</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
   </section>
 
-
-  <section class="container">
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
     <h2>Featured Projects</h2>
     <p class="subtitle">Selected work showcasing real‑world AI and software systems.</p>
 
     <div class="grid">
-      {projects.map(p => (
-        <div class="card">
-          <img src={p.img} alt={p.title} />
-          <h3>{p.title}</h3>
-          <p>{p.desc}</p>
-          <a class="button" href={p.link} target="_blank">View Project</a>
+      <div class="card">
+        <h3>EfficientSAM for Medical Image Analysis</h3>
+        <p>Lightweight deep learning segmentation model optimised for medical image analysis.</p>
+        <div style="margin:12px 0">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Research</span>
         </div>
-      ))}
+        <a class="btn" href="https://github.com/yurvanr23/EfficientSAM_for_MedicalImageAnalysis">GitHub</a>
+      </div>
+        
+      <div class="card">
+        <h3>AI Girlfriend App</h3>
+        <p>Real‑time conversational AI with natural voice synthesis and fallback TTS pipeline.</p>
+        <div style="margin:12px 0">
+          <span class="tag">Flask</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">TTS</span>
+        </div>
+        <a class="btn" href="https://github.com/yurvanr23/AI-Girlfriend-App">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Pokémon Companion App</h3>
+        <p>Interactive web app with team builder, battle simulator, and API‑driven data exploration.</p>
+        <div style="margin:12px 0">
+          <span class="tag">JavaScript</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Frontend</span>
+        </div>
+        <a class="btn" href="https://github.com/yurvanr23/Pokemon-Companion-App">GitHub</a>
+      </div>
+      
+      
+      <div class="card">
+        <h3>NBA Outcome Prediction</h3>
+        <p>Machine learning regression models predicting NBA game outcomes using historical statistics.</p>
+        <div style="margin:12px 0">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Data Science</span>
+        </div>
+      </div>
+      
     </div>
   </section>
+
+  <!-- SKILLS -->
+  <section class="container">
+    <h2>Skills</h2>
+    <p><strong>AI / ML:</strong> PyTorch, Transformers, Computer Vision, NLP</p>
+    <p><strong>Development:</strong> Python, JavaScript, Flask, APIs</p>
+    <p><strong>Tools:</strong> Git, GitHub, Astro, Vercel</p>
+    <p><strong>Learning:</strong> Cloud Computing, Cybersecurity, MLOps</p>
+  </section>
+  
+  
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Open to graduate AI, ML, and software engineering opportunities.</p>
+    <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap">
+      <a class="btn" href="mailto:yurvan@example.com">Email</a>
+      <a class="btn" href="https://github.com/yurvanr23">GitHub</a>
+      <a class="btn" href="https://linkedin.com">LinkedIn</a>
+    </div>
+  </section>
+  
+  
+  <footer>© 2026 Yurvan Ramjan</footer>
 </BaseLayout>
